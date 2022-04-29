@@ -27,3 +27,7 @@ show_message.click()
 
 print_message = chrome_browser.find_element(by=By.ID, value='display')
 print(print_message.get_attribute('innerHTML'))
+
+time.sleep(2)
+
+chrome_browser.close()
